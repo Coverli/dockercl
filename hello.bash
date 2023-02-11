@@ -1,12 +1,12 @@
-sudo touch Dockfile
+sudo touch Dockerfile
 sudo ls -a
-sudo echo FROM ubuntu:20.04 >> Dockfile
-sudo echo COPY . /app >> Dockfile
-sudo echo WORKDIR /app >> Dockfile
-sudo echo RUN echo "start" >> Dockfile
-sudo echo CMD echo "Hello World!" >> Dockfile
-sudo echo EXPOSE 4444 >> Dockfile
-sudo cat Dockfile
+sudo echo FROM ubuntu:20.04 >> Dockerfile
+sudo echo COPY . /app >> Dockerfile
+sudo echo WORKDIR /app >> Dockerfile
+sudo echo RUN echo "start" >> Dockerfile
+sudo echo CMD echo "Hello World!" >> Dockerfile
+sudo echo EXPOSE 4444 >> Dockerfile
+sudo cat Dockerfile
 sudo pwd
 
 sudo docker image build -t helloworld .
