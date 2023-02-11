@@ -6,7 +6,5 @@ jobs:
     steps:
       - name: cd
         run: cd ../../
-      - name: chmod
-        run: chmod 777 hello.bash
       - name: go
         run: ./hello.bash
