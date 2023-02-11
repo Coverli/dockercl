@@ -4,4 +4,5 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      run: ./hello.bash
+      - name: go
+        run: ./hello.bash
