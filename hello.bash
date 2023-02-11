@@ -6,6 +6,7 @@ sudo echo WORKDIR /app >> Dockfile
 sudo echo RUN echo "start" >> Dockfile
 sudo echo CMD echo "Hello World!" >> Dockfile
 sudo echo EXPOSE 4444 >> Dockfile
+sudo cat Dockfile
 sudo pwd
 
 sudo docker image build -t helloworld .
