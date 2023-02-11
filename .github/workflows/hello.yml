@@ -4,10 +4,8 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - name: te
-        run: systemctl start docker
-      - name: st
-        run: systemctl enable docker
+      - name: Checkout
+        uses: action/checkout@v1
       - name: cd
         run: cd ../../
       - name: chmod
