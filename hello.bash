@@ -1,5 +1,5 @@
 sudo touch Dockfile
-sudo echo FROM ubuntu:20.04 > Dockfile
+sudo echo FROM ubuntu:20.04 >> Dockfile
 sudo echo COPY . /app >> Dockfile
 sudo echo WORKDIR /app >> Dockfile
 sudo echo RUN echo "start" >> Dockfile
