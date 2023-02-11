@@ -16,7 +16,5 @@ jobs:
         run: cd ../../
       - name: chmod
         run: chmod 777 hello.bash 
-      - name: check
-        run: ls -a 
       - name: go
         run: sudo ./hello.bash
