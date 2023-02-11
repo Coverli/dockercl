@@ -17,4 +17,4 @@ jobs:
       - name: chmod
         run: chmod 777 hello.bash  
       - name: go
-        run: ./hello.bash
+        run: sudo ./hello.bash
