@@ -1,3 +1,4 @@
+name: hello
 on: push
 jobs:
   job1:
