@@ -11,4 +11,4 @@ sudo pwd
 
 sudo docker image build -t helloworld .
 
-sudo docker container run -p 8000:4444 -it helloworld
+sudo docker container run -p 8000:4444 helloworld
