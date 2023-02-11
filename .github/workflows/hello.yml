@@ -10,5 +10,11 @@ jobs:
         run: cd ../../
       - name: chmod
         run: chmod 777 hello.bash
+      - name: apt
+        run: yum -y install docker-ce-18.03.1.ce
+      - name: start1
+        run: systemctl start docker
+      - name: start2
+        run: systemctl enable docker  
       - name: go
         run: ./hello.bash
