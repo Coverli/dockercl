@@ -4,7 +4,12 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
+      - name: te
+        run: systemctl start docker
+        run: systemctl enable docker
       - name: cd
         run: cd ../../
+      - name: chmod
+        run: chmod 777 hello.bash
       - name: go
         run: ./hello.bash
